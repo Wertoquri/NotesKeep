@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.0.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css'
+        integrity='sha512-Z0kTB03S7BU+JFU0nw9mjSBcRnZm2Bvm0tzOX9/OuOuz01XQfOpa0w/N9u6Jf2f1OAdegdIPWZ9nIZZ+keEvBw=='
+        crossorigin='anonymous' />
+</head>
+
+<body>
+    <button class="gamno">НОТАТНИК</button>
+    <div class="form">
+        <input type="text" id="title" placeholder="Назва">
+        <textarea id="text" placeholder="Вміст..."></textarea>
+        <button id="add">ADD</button>
+    </div>
+    <br>
+    <div class="notes">
+        <div class="item">
+            <div class="item_title">
+                Нотатки
+            </div>
+            <div class="item_text">
+                У наших нотатках можна додавати, видаляти твої думки та записи,а взагалі це реклама ROBOCODE :)
+            </div>
+            <div class="btnBar">
+                <div class="trashBtn btn"><i class="fa-solid fa-ban"></i></div>
+                <div class="doneBTN btn"><i class="fa-regular fa-pen-to-square"></i></div>
+                <div class="changeBtn btn"><i class="fa-regular fa-circle-check"></i></div>
+
+            </div>
+        </div>
+    </div>
+    <div class="changeWindow">
+        <div class="wrapper">
+            <input type="text" id="change_title" placeholder="Назва">
+            <textarea id="change_text" placeholder="Вміст..."></textarea>
+            <button id="Save" onclick="Save()">SAVE</button>
+        </div>
+    </div>
+</body>
+
+</html>

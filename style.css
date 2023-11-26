@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+   font-family: cursive;
+   background-image:url("https://static.vecteezy.com/system/resources/previews/004/397/841/original/seamless-pattern-of-colored-stationery-and-art-supplies-on-black-chalkboard-background-repeat-backdrop-with-isolated-paint-brush-pencil-watercolor-gouache-oils-pastel-paint-cup-vector.jpg");
+   background-size: contain;
+   color: whitesmoke;
+}
+.gamno {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 0 1px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    width: 130px;
+    font-family: cursive;
+    font-size: large;
+}
+
+#title, #change_title{
+   border-radius: 50px;
+   padding: 5px 10px;
+   font-family: cursive;
+}  
+
+#text, #change_text {
+    padding: 10px;
+    min-height: 40px;
+    font-family: cursive;
+    border-radius: 18px
+}
+
+#add, #Save {
+    font-family: sans-serif;
+    box-shadow: 0 0 1px;
+    background-color: whitesmoke;
+    padding: 5px;
+    border-radius: 8px;
+    border: none;
+    
+}
+
+
+#text {
+    border-radius: 20px;
+}
+
+.form, .wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+input {
+    border: none;
+}
+
+.notes {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 50px;
+        margin: 50px 100px;
+
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    background-color: rgba(66, 61, 61, 0.842);
+
+}
+
+.true {
+    background-color: rgba(31, 19, 19, 0.644);
+    text-decoration: line-through;
+}
+
+.item_title{
+    text-align: center;
+}
+
+.btnBar{
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+}
+
+.btn {
+    background-color: rgba(0,0,0,0.25);
+    padding: 2px 5px;
+    border-radius: 11px;
+    font-size: 15px;
+}
+
+.data {
+    font-size: 11px
+}
+
+.item_text{
+    overflow: hidden;
+}
+
+.changeWindow {
+ position: fixed;
+ inset: 0;
+ backdrop-filter: blur(5px);
+ display: none;
+ justify-content: center;
+ align-items: center;
+}
